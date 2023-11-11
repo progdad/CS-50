@@ -24,7 +24,8 @@
 
 ## **Compilation Process**
 - The compilation of a **C program** involves four essential steps:
-  - **Preprocessing**: This initial step involves tasks like including necessary files (`#include`), expanding macros (`#define`), and removing comments to prepare the source code for further compilation. File extensions after preprocessing may include `.c` or `.h`.
+  - **Preprocessing**: This initial step in C programming involves using the preprocessor to perform tasks like including necessary files (`#include`), expanding **macros**(symbolic names or identifiers created using the `#define` directive.), and removing comments. The preprocessor prepares the source code for further compilation, and file extensions after preprocessing may include `.c` or `.h.`
+    - **Preprocessor**: In C programming, the preprocessor is a tool that performs initial transformations on the source code before actual compilation. The preprocessor ensures that the source code is prepared and modified as needed for subsequent compilation phases.
   - **Compiling**: This phase translates the source code into **Assembly** language, generating files with extensions like `.s` or `.obj`.
   - **Assembling**: Assembly code is further translated into binary code.
   - **Linking**: The final step involves linking the binary code of related files into a cohesive binary program, creating the executable file.
