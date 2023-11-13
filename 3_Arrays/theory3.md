@@ -10,6 +10,3 @@
 ## **Memory Access and Management**
 - Both **arrays and strings** in C offer **direct memory access**, which is different from high-level programming languages. This **direct access** makes them efficient for **low-level programming tasks**.
 - However, it's important to note that they require **manual memory management**. In C, developers are responsible for **allocating and deallocating memory**, which can be both **powerful and challenging**.
-
-## **Programming Languages**
-- **C**, **Python**, **JavaScript (JS)**, **PHP**, and others are all **programming languages**. A **programming language** is a **vocabulary** and set of **grammatical rules** used to instruct a computer or computing device to perform **specific tasks**.

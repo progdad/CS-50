@@ -1,5 +1,15 @@
 # **Understanding Computer Science Fundamentals**
 
+## Computer
+- A **computer** is a sophisticated **electronic device** that **processes, stores, and retrieves data** through a combination of **hardware components** (such as the processor, memory, and storage) **and software** (including the operating system and applications). It operates on **binary code**, enabling diverse functions such as data processing, calculations, communication, and information storage. 
+
+## **Programming Languages**
+- **C**, **Python**, **JavaScript (JS)**, **PHP**, and others are all **programming languages**. A **programming language** is a **vocabulary** and set of **grammatical rules**, that together create programs, or instructions that tell a computer or computing device how to perform **specific tasks**.
+
+## **Operating System and Software**
+- The **operating system (OS)** is a **foundational software layer** that manages a computer's hardware and provides crucial services for other software to run efficiently. It acts as a **bridge between users and hardware**, handling tasks such as resource allocation, process scheduling, and user interface. Essentially, the OS ensures a seamless and organized interaction between the user, applications, and the underlying hardware, allowing for the effective execution of diverse computing tasks.
+- **Software**, a set of **instructions**, encompasses the OS, applications, and scripts, written in **programming languages**, facilitating diverse computer functionalities.
+
 ## **Binary Representation**
 - Computers process information using electrical signals represented by **binary code**: 0s and 1s.
 - A **"bit"** stands for **"binary digit,"** and it's the **smallest unit** in computing.
