@@ -37,7 +37,8 @@
 - `LIKE`: Searches for a specified pattern in a column.
 
 ### GROUP BY Clause
-- The SQL keywords (`SELECT`, `FROM`, `WHERE`, etc.) are used in conjunction with the `GROUP BY` clause and [aggregate functions](#aggregate-functions) to group rows based on specified columns. Each group is represented by a single row in the result set.
+- The SQL keywords (`SELECT`, `FROM`, `WHERE`, etc.) are used mostly in conjunction with the `GROUP BY` clause and [aggregate functions](#aggregate-functions) to group rows based on specified columns. Each group is represented by a single row in the result set.  while it's less common to use GROUP BY without aggregate functions, it can be employed for the purpose of obtaining distinct values or eliminating duplicates in the specified column(s)
+- Besides aggregate functions, **only** the columns that we `GROUP BY` should be selected. Otherwise it would typically result in an error, as the database engine wouldn't know which specific value to select for that column within each group.
 
 ### JOIN Operation
 - The `JOIN` operation combines rows from two or more tables based on related columns. Join conditions specify how rows should match between tables. Basic join types include:
@@ -59,3 +60,23 @@ The `LIKE` operator is used in a `WHERE` clause to search for a specified patter
 - `BEGIN TRANSACTION`: Starts a new transaction.
 - `COMMIT`: Saves changes made during the current transaction.
 - `ROLLBACK`: Undoes changes made during the current transaction.
+
+<hr>
+
+### BONUS:
+### CASE Expressions
+- The `CASE` expression goes through conditions and returns a value when the first condition is met (like an if-then-else statement). So, once a condition is true, it will stop reading and return the result. If no conditions are true, it returns the value in the **ELSE** clause. <br> If there is no ELSE part and no conditions are true, it returns **NULL**.
+- If the `AS` keyword, followed by a name after the `END` of the CASE expression, is not used, the result of the CASE expression will not be given a specific name, and it will be displayed as an anonymous column in the result set
+- **Syntax**:
+```sql
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END; 
+```
+
+<hr>
+
+*For any questions on SQL, I'd suggest you to visit [w3schools](https://www.w3schools.com)*
