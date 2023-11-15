@@ -37,7 +37,7 @@
 - `LIKE`: Searches for a specified pattern in a column.
 
 ### GROUP BY Clause
-- The `GROUP BY` clause is used in conjunction with [aggregate functions](#aggregate-functions) to group rows based on specified columns, and each group is represented by a single row in the result set. It is ALWAYS used in conjunction with the functions to perform calculations on each group of rows.
+- The SQL keywords (`SELECT`, `FROM`, `WHERE`, etc.) are used in conjunction with the `GROUP BY` clause and [aggregate functions](#aggregate-functions) to group rows based on specified columns. Each group is represented by a single row in the result set.
 
 ### JOIN Operation
 - The `JOIN` operation combines rows from two or more tables based on related columns. Join conditions specify how rows should match between tables. Basic join types include:
@@ -54,3 +54,8 @@ The `LIKE` operator is used in a `WHERE` clause to search for a specified patter
 - `[ ]` (Square Brackets): Defines a character set, allowing for matching any single character within the specified range or set. For example, `[a-e]` matches any character from 'a' to 'e'.
 - `^` (Caret): Used within square brackets to negate the pattern. For example, `[^0-9]` matches any character that is not a digit.
 - `\` (Backslash): Serves as an escape character. It allows you to use wildcard characters as literal characters when they need to be treated as such. For example, `100\%` matches the string '100%'.
+
+### Transactions
+- `BEGIN TRANSACTION`: Starts a new transaction.
+- `COMMIT`: Saves changes made during the current transaction.
+- `ROLLBACK`: Undoes changes made during the current transaction.

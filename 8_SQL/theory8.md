@@ -27,3 +27,12 @@
 
 - SQL can encounter a **race condition** when multiple transactions or processes attempt to access and modify shared data concurrently. In such scenarios, the outcome of the operations becomes unpredictable, leading to potential issues such as data inconsistency, corruption, or unintended errors. To prevent unpredictable and potentially incorrect results, SQL databases use techniques like **locking** and **transactions**, ensuring that only one transaction can modify a piece of data at a time.
 - **SQL Injection** is a security vulnerability where an attacker manipulates a database query by injecting malicious SQL code. This is often done by manipulating user input to alter the intended functionality of the SQL queries. Secure coding practices, such as **parameterized queries** and **input validation**, are crucial for mitigating the risk of SQL injection and maintaining the integrity of the database.
+
+## Transactions
+
+An **SQL transaction** is a sequence of one or more database operations (such as inserts, updates, or deletes) executed as a single unit. Transactions adhere to the **ACID** properties (Atomicity, Consistency, Isolation, Durability) to ensure reliable and consistent database operations:
+
+- **Atomicity**: Transactions ensure atomicity, meaning that either all the changes made by the transaction are applied to the database, or none of them are (resulting in a **rollback**).
+- **Consistency**: Any change maintains data integrity, ensuring that everything in the database complies with its rules (defined during the database creation), or the change is cancelled completely.
+- **Isolation**: Isolation prevents interference from concurrent transactions. Each transaction operates independently, unaware of other transactions in progress, preventing conflicts.  
+- **Durability**: Once a transaction is committed, the changes made by that transaction become permanent and will survive even if the system crashes or encounters errors afterward.
