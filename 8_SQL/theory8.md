@@ -36,3 +36,13 @@ An **SQL transaction** is a sequence of one or more database operations (such as
 - **Consistency**: Any change maintains data integrity, ensuring that everything in the database complies with its rules (defined during the database creation), or the change is cancelled completely.
 - **Isolation**: Isolation prevents interference from concurrent transactions. Each transaction operates independently, unaware of other transactions in progress, preventing conflicts.  
 - **Durability**: Once a transaction is committed, the changes made by that transaction become permanent and will survive even if the system crashes or encounters errors afterward.
+
+## SQL Commands' Execution Order
+
+1. `FROM/JOIN` clauses are executed first to determine the data of interest.
+2. `WHERE` clause is executed to filter out records that do not meet the constraints.
+3. `GROUP` BY clause is executed to group the data based on the values in one or more columns.
+4. `HAVING` clause is executed to remove the created grouped records that don’t meet the constraints.
+5. `SELECT` clause is executed to derive all desired columns and expressions.
+6. `ORDER BY` clause is executed to sort the derived values in ascending or descending order.
+7. `LIMIT/OFFSET` clauses are executed to keep or skip a specified number of rows.
