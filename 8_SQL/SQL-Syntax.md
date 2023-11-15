@@ -37,8 +37,8 @@
 - `LIKE`: Searches for a specified pattern in a column.
 
 ### GROUP BY Clause
-- The SQL keywords (`SELECT`, `FROM`, `WHERE`, etc.) are used mostly in conjunction with the `GROUP BY` clause and [aggregate functions](#aggregate-functions) to group rows based on specified columns. Each group is represented by a single row in the result set.  while it's less common to use GROUP BY without aggregate functions, it can be employed for the purpose of obtaining distinct values or eliminating duplicates in the specified column(s)
-- Besides aggregate functions, **only** the columns that we `GROUP BY` should be selected. Otherwise it would typically result in an error, as the database engine wouldn't know which specific value to select for that column within each group.
+- The SQL keywords (`SELECT`, `FROM`, `WHERE`, etc.) are used mostly in conjunction with the `GROUP BY` clause and [aggregate functions](#aggregate-functions) to group rows based on specified columns. Each group is represented by a single row in the result set.  While it's less common to use GROUP BY without aggregate functions, it can be employed for the purpose of obtaining distinct values or eliminating duplicates in the specified column(s).
+- Besides aggregate functions, **only** the columns that we `GROUP BY` should be selected. Otherwise the query would typically result in an error, as the database engine wouldn't know which specific value to select for that column within each group.
 
 ### JOIN Operation
 - The `JOIN` operation combines rows from two or more tables based on related columns. Join conditions specify how rows should match between tables. Basic join types include:
